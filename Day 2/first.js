@@ -11,3 +11,5 @@ const obj2 = document.getElementsByClassName("header2");
 obj2[0].innerHTML = "HEader2"; //accesing obj2[0] means header2
 
 obj2[0].style.color = "Violet";
+
+console.log(obj.tagName); //returns h1
