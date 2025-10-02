@@ -6,7 +6,15 @@ form.addEventListener("click", (event) => {
 //to submit the form
 
 form.addEventListener("submit", (event) => {
+  event.preventDefault(); // to prevent the page from refresh
   //page refresh on usbmit
   //   console.log(event.target.value);
-  console.log("Form Submited!");
+  //   console.log("Form Submited!");
+
+  const data = new FormData();
+
+  for (let [key, value] of data.entries()) {
+    //data.entries give key value pairs
+    console.log(key, value);
+  }
 });
