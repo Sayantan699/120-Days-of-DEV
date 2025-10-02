@@ -11,7 +11,7 @@ form.addEventListener("submit", (event) => {
   //   console.log(event.target.value);
   //   console.log("Form Submited!");
 
-  const data = new FormData();
+  const data = new FormData(form);
 
   for (let [key, value] of data.entries()) {
     //data.entries give key value pairs
